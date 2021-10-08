@@ -1,0 +1,6 @@
+FROM node:latest
+
+COPY
+CMD ..
+ENTRYPOINT
+RUN
