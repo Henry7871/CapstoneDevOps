@@ -1,0 +1,20 @@
+version: '3'
+service:
+  web-nginx:
+    image:web-nginx
+    build:./web_nginx
+    restart: always 
+    ports:
+    - "8080:80"
+  webapp:
+    image:app-node
+    build:./app_node
+    ports:
+    restart: always
+    - "80:80"
+  database:
+    image:db-mongo
+    build:db_mongo
+    restart: always
+    ports:
+    - "27017":"27017"
