@@ -1,4 +1,4 @@
 FROM nginx:latest
 
 # configuration
-COPY .. ..
+COPY nginx.conf /etc/nginx/nginx.conf
