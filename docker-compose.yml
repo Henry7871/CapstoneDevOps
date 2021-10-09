@@ -6,12 +6,15 @@ service:
     restart: always 
     ports:
     - "8080:80"
+    
   webapp:
     image:app-node
     build:./app_node
-    ports:
     restart: always
-    - "80:80"
+    deploy:
+      mode: replicated
+      replicas: 3
+
   database:
     image:db-mongo
     build:db_mongo
