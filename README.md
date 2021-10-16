@@ -20,4 +20,4 @@ https://www.cnblogs.com/jianzihao/p/14805893.html
 
 Issues:
 1. nginx.conf how to set up app servers according to replicas config
-2. yml depend on
+2. .yml depend on label
