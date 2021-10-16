@@ -1,0 +1,173 @@
+{
+    "fields": [
+      {
+        "name": "_id",
+        "path": "_id",
+        "count": 5,
+        "types": [
+          {
+            "name": "ObjectID",
+            "bsonType": "ObjectID",
+            "path": "_id",
+            "count": 5,
+            "values": [
+              "6162eab8de4f8a788c9d501d",
+              "6162ec5471bc155df09f654a",
+              "6162ec233a81668a83853b34",
+              "6162eb99f6fbbc5d5576f835",
+              "6162eb88f6fbbc5d5576f832"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 5,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 5,
+        "type": "ObjectID",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "__v",
+        "path": "__v",
+        "count": 5,
+        "types": [
+          {
+            "name": "Int32",
+            "bsonType": "Int32",
+            "path": "__v",
+            "count": 5,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 5,
+        "type": "Int32",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "email",
+        "path": "email",
+        "count": 5,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "email",
+            "count": 5,
+            "values": [
+              "q@q.com",
+              "x@x.com",
+              "x@t.com",
+              "r@t.com",
+              "q@t.com"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 5,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 5,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "firstname",
+        "path": "firstname",
+        "count": 5,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "firstname",
+            "count": 5,
+            "values": [
+              "hyb",
+              "hyb",
+              "hyb",
+              "hyb",
+              "hyb"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 5,
+        "type": "String",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "lastname",
+        "path": "lastname",
+        "count": 5,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "lastname",
+            "count": 5,
+            "values": [
+              "hhh",
+              "hhh",
+              "hhh",
+              "hhh",
+              "hhh"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 5,
+        "type": "String",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "password",
+        "path": "password",
+        "count": 5,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "password",
+            "count": 5,
+            "values": [
+              "$2b$12$zdExpE.1q4Ri/z/LJbbWgeFRW9Wu3X92WK0HKt/D.lT.gCsSIjWTC",
+              "$2b$12$LbUKJO5nG3B.ocEtHj7D8OuDZKtv/KRnpqKVQNrloKVH.5JH564aS",
+              "$2b$12$q3BOKZrIH.//xtOKF17mvOR.C.AquuqA8HSpwl8t6T8amt21BRmd6",
+              "$2b$12$F/ImJY3RfrrYqYbpwCpE..ODg/iR31kFyKlp0fsbzt3CHX37P4sN.",
+              "$2b$12$xNFwIA9Ft1JQ3UtGZO4duOgIdXIx6o30/aU96MzaeMpO11ZZdo35i"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 5,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 5,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      }
+    ],
+    "count": 5
+  }
