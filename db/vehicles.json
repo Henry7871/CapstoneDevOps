@@ -1,0 +1,180 @@
+{
+    "fields": [
+      {
+        "name": "_id",
+        "path": "_id",
+        "count": 2,
+        "types": [
+          {
+            "name": "ObjectID",
+            "bsonType": "ObjectID",
+            "path": "_id",
+            "count": 2,
+            "values": [
+              "6155e6e910e2400bc19ebd41",
+              "6155de0a3c8ac4a90d998f04"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 2,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 2,
+        "type": "ObjectID",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "__v",
+        "path": "__v",
+        "count": 2,
+        "types": [
+          {
+            "name": "Int32",
+            "bsonType": "Int32",
+            "path": "__v",
+            "count": 2,
+            "values": [
+              0,
+              0
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 2,
+        "type": "Int32",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "make",
+        "path": "make",
+        "count": 2,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "make",
+            "count": 2,
+            "values": [
+              "audi",
+              "audi"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 2,
+        "type": "String",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "miles",
+        "path": "miles",
+        "count": 2,
+        "types": [
+          {
+            "name": "Int32",
+            "bsonType": "Int32",
+            "path": "miles",
+            "count": 2,
+            "values": [
+              1000,
+              1000
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 2,
+        "type": "Int32",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "plate",
+        "path": "plate",
+        "count": 2,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "plate",
+            "count": 2,
+            "values": [
+              "shaun",
+              "xyx"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 2,
+            "has_duplicates": false
+          }
+        ],
+        "total_count": 2,
+        "type": "String",
+        "has_duplicates": false,
+        "probability": 1
+      },
+      {
+        "name": "registerNumber",
+        "path": "registerNumber",
+        "count": 2,
+        "types": [
+          {
+            "name": "String",
+            "bsonType": "String",
+            "path": "registerNumber",
+            "count": 2,
+            "values": [
+              "hyb",
+              "hyb"
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 2,
+        "type": "String",
+        "has_duplicates": true,
+        "probability": 1
+      },
+      {
+        "name": "year",
+        "path": "year",
+        "count": 2,
+        "types": [
+          {
+            "name": "Int32",
+            "bsonType": "Int32",
+            "path": "year",
+            "count": 2,
+            "values": [
+              1990,
+              1990
+            ],
+            "total_count": 0,
+            "probability": 1,
+            "unique": 1,
+            "has_duplicates": true
+          }
+        ],
+        "total_count": 2,
+        "type": "Int32",
+        "has_duplicates": true,
+        "probability": 1
+      }
+    ],
+    "count": 2
+  }
