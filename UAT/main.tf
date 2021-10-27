@@ -90,8 +90,3 @@ resource "mongodbatlas_project_ip_access_list" "my_ipaddress" {
       ip_address = var.mongodb_atlas_accesslistip
       comment    = "Anywhere"
 }
-
-# Use terraform output to display connection strings.
-output "connection_strings" {
-  value = mongodbatlas_cluster.my_cluster.connection_strings.0.standard_srv
-}
