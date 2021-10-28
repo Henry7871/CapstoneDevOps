@@ -32,7 +32,7 @@ provider "mongodbatlas" {
 # Create a Project
 #
 resource "mongodbatlas_project" "my_project" {
-  name   = "p3"
+  name   = "p3-henry"
   org_id = var.mongodb_atlas_org_id
 }
 

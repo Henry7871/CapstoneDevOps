@@ -38,5 +38,5 @@ variable "mongodb_atlas_database_user_password" {
 }
 
 variable "mongodb_atlas_accesslistip" {
-  default = "43.252.113.8"
+  default = "123.208.223.239"
 }
