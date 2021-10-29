@@ -4,7 +4,7 @@ data "aws_ssm_parameter" "linux_latest_ami" {
 
 resource "aws_instance" "jump_box" {
     ami = data.aws_ssm_parameter.linux_latest_ami.value
-    instance_type = "t2.micro"
+    instance_type = var.instance_type
     key_name = "sdn_tutorial_key"
 
     subnet_id = var.pub_sub_id
@@ -18,7 +18,7 @@ resource "aws_instance" "jump_box" {
 
 resource "aws_instance" "app_instance" {
   ami           = data.aws_ssm_parameter.linux_latest_ami.value
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
   key_name      = var.key_name
 
   subnet_id              = var.prv_sub_id 

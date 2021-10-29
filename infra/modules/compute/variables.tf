@@ -19,3 +19,9 @@ variable "key_name" {
   type = string
   # default = "sdn_tutorial_key"
 }
+
+variable "instance_type" {
+  description = "AWS EC2 type"
+  type = string
+  # default = "t2.micro"
+}

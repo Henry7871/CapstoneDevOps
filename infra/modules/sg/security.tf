@@ -1,6 +1,6 @@
 resource "aws_security_group" "general_sg" {
     description = "HTTP egress to anywhere"
-    vpc_id = aws_vpc.main.id
+    vpc_id = var.vpc_id
 
     tags = {
         Project = "sdn-tutorial"
@@ -9,7 +9,7 @@ resource "aws_security_group" "general_sg" {
 
 resource "aws_security_group" "bastion_sg" {
     description = "SSH ingress to Bastion and SSH egress to App"
-    vpc_id = aws_vpc.main.id
+    vpc_id = var.vpc_id
 
     tags = {
         Project = "sdn-tutorial"
@@ -18,7 +18,7 @@ resource "aws_security_group" "bastion_sg" {
 
 resource "aws_security_group" "app_sg" {
     description = "SSH ingress from Bastion and all TCP traffic ingress from ALB security group"
-    vpc_id = aws_vpc.main.id
+    vpc_id = var.vpc_id
     
     tags = {
         Project = "sdn-tutorial"
