@@ -7,8 +7,8 @@ resource "aws_instance" "jump_box" {
     instance_type = "t2.micro"
     key_name = "sdn_tutorial_key"
 
-    subnet_id = aws_subnet.pub_sub.id
-    vpc_security_group_ids = [aws_security_group.general_sg.id, aws_security_group.bastion_sg.id]
+    subnet_id = var.pub_sub_id
+    vpc_security_group_ids = var.bastion_sg_ids
 
     tags = {
         Project = "sdn-tutorial"
@@ -21,8 +21,8 @@ resource "aws_instance" "app_instance" {
   instance_type = "t2.micro"
   key_name      = "sdn_tutorial_key"
 
-  subnet_id              = aws_subnet.prv_sub.id
-  vpc_security_group_ids = [aws_security_group.general_sg.id, aws_security_group.app_sg.id]
+  subnet_id              = var.prv_sub_id 
+  vpc_security_group_ids = var.app_sg_ids
 
   tags = {
     Project = "sdn-tutorial"
