@@ -3,7 +3,7 @@ output "jump_box_ip" {
 }
 
 output "app_instance_ip" {
-  value = module.compute.private_ip
+  value = module.compute.app_instance_ip
 }
 
 output "ssh_key_path" {
