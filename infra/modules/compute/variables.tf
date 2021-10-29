@@ -13,3 +13,9 @@ variable "bastion_sg_ids" {
 variable "app_sg_ids" {
   type = list
 }
+
+variable "key_name" {
+  description = "SSH public key name"
+  type = string
+  # default = "sdn_tutorial_key"
+}

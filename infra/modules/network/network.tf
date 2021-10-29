@@ -1,5 +1,5 @@
 resource "aws_vpc" "main" {
-    cidr_block = "172.16.0.0/16"
+    cidr_block = var.vpc_cidr_block
     tags = {
         Project = "sdn-tutorial"
     }
@@ -7,8 +7,8 @@ resource "aws_vpc" "main" {
 
 resource "aws_subnet" "pub_sub" {
     vpc_id = aws_vpc.main.id
-    cidr_block = "172.16.1.0/24"
-    availability_zone = "ap-southeast-2b"
+    cidr_block = var.pub_sub_cidr_block
+    availability_zone = var.az
     map_public_ip_on_launch = true
 
     tags = {
@@ -18,8 +18,8 @@ resource "aws_subnet" "pub_sub" {
 
 resource "aws_subnet" "prv_sub" {
     vpc_id = aws_vpc.main.id
-    cidr_block = "172.16.4.0/24"
-    availability_zone = "ap-southeast-2b"
+    cidr_block = var.prv_sub_cidr_block
+    availability_zone = var.az
     map_public_ip_on_launch = false
 
     tags = {
