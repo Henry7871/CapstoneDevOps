@@ -1,38 +1,21 @@
-module "compute" {
-  source         = "./modules/compute"
-  pub_sub_id     = aws_subnet.pub_sub.id
-  bastion_sg_ids = [aws_security_group.general_sg.id, aws_security_group.nginx_sg.id]
-  app_sg_ids     = [aws_security_group.general_sg.id, aws_security_group.app_sg.id]
+terraform {
+  required_providers {
+    mongodbatlas = {
+      source = "mongodb/mongodbatlas"
+      version = "1.0.2"
+    }
+  }
 }
-
-#
-# Example Terraform Config to create a
-# MongoDB Atlas Shared Tier Project, Cluster,
-# Database User and Project IP Whitelist Entry
-#
-# First step is to create a MongoDB Atlas account
-# https://docs.atlas.mongodb.com/tutorial/create-atlas-account/
-#
-# Then create an organization and programmatic API key
-# https://docs.atlas.mongodb.com/tutorial/manage-organizations
-# https://docs.atlas.mongodb.com/tutorial/manage-programmatic-access
-#
-# Terraform MongoDB Atlas Provider Documentation
-# https://www.terraform.io/docs/providers/mongodbatlas/index.html
-# Terraform 0.14+, MongoDB Atlas Provider 0.9.1+
-
-
 
 provider "mongodbatlas" {
   public_key  = var.mongodb_atlas_api_pub_key
   private_key = var.mongodb_atlas_api_pri_key
 }
-
 #
 # Create a Project
 #
 resource "mongodbatlas_project" "my_project" {
-  name   = "p3-henry"
+  name   = "p3"
   org_id = var.mongodb_atlas_org_id
 }
 
