@@ -69,5 +69,7 @@ module "mongodb" {
     mongodb_atlas_accesslistip           = var.mongodb_atlas_accesslistip
     mongodb_atlas_database_username      = var.mongodb_atlas_database_username
     mongodb_atlas_database_user_password = var.mongodb_atlas_database_user_password
+    mongodb_atlas_api_pub_key            = var.mongodb_atlas_api_pub_key
+    mongodb_atlas_api_pri_key            = var.mongodb_atlas_api_pri_key
 }
 
